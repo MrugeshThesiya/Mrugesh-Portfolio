@@ -4,8 +4,7 @@ import { socials } from '../constants'
 
 function Footer() {
   return (
-    <div className='flex items-center justify-center flex-col pb-[20px] lg:flex-row flex-wrap'>
-    <div className='flex justify-center items-center gap-[2rem]'>
+    <div className='flex flex-col justify-center items-center gap-[2rem] pb-[20px] md:flex-row'>
       <img src={Mrugesh} alt="Image of Mrugesh Thesiya" className='w-[10rem] rounded-[50%]' />
        <div>
        <p>
@@ -17,7 +16,6 @@ function Footer() {
             ))}
         </div>
        </div>
-    </div>
     </div>
   )
 }
