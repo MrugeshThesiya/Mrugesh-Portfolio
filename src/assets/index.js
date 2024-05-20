@@ -6,10 +6,8 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-
+import webdev from "./webdev.png"
 import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
@@ -20,6 +18,7 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import framerMotion from "./tech/framer-motion.svg"
 
 import PDEU from "./company/PDEU.jpg";
 import CK from "./company/CK.jpg"
@@ -38,8 +37,6 @@ export {
   menu,
   close,
   css,
-  docker,
-  figma,
   git,
   html,
   javascript,
@@ -50,8 +47,10 @@ export {
   tailwind,
   typescript,
   threejs,
+  framerMotion,
   PDEU,
   CK,
   BhartiyaDharohar,
-  Mrugesh
+  Mrugesh,
+  webdev
 };
