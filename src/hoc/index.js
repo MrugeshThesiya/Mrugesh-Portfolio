@@ -1,3 +1,4 @@
 import SectionWrapper from "./SectionWrapper";
+import SmallProjWrapper from "./SmallProjWrapper";
 
-export { SectionWrapper };
+export { SectionWrapper,SmallProjWrapper};

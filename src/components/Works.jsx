@@ -7,6 +7,7 @@ import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { Link } from "react-router-dom";
 
 const ProjectCard = ({
   index,
@@ -84,8 +85,8 @@ const Works = () => {
         >
           Following projects showcases my skills and experience . Each project is briefly described with
           links to code repositories and live demos in it . It reflects my
-          ability to solve work with different technologies ,
-          and manage projects effectively.
+          ability to solve real world problems with different technologies ,
+          and manage projects effectively.Check out my Small projects by clicking <Link to="/SmallProjects">here</Link>
           <br/>
            
           ( Note : Click inside the card to visit the project and Click on the github icon in the top right to see the github repository related to it. )
