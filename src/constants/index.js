@@ -1,3 +1,4 @@
+import { useCallback } from "react";
 import {
   mobile,
   backend,
@@ -19,6 +20,7 @@ import {
   threejs,
   BhartiyaDharohar,
   webdev,
+  password
 } from "../assets";
 
 const navLinks = [
@@ -170,13 +172,15 @@ const smallProjects = [
     name : "Background Changer",
     link : "/BgChanger",
     img : "https://media.geeksforgeeks.org/wp-content/uploads/20230602152909/backgroundchangerGIF.gif",
-    desc : "A Basic React Project that thaught me how to manipulate basic properties like background Colour and how to manage a react project."
+    desc : "A Basic React Project that thaught me how to manipulate basic properties like background Colour and how to manage a react project.",
+    
   },
   {
     name : "Password Generator",
     link : "/PassWordGen",
-    img : "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWs2NzB4NmlrMHRteWtkN3V5cnF6NTRtdXNwa2ZzMDc5dWxyNHptZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SXOdjPojfeOXzgc0J1/200.webp",
-    desc : "A Basic React Project that thaught me how to manipulate basic properties like background Colour and how to manage a react project."
+    img : password,
+    desc : `Through this project I learnt the use of hooks like useCallback, useEffect, useState, useId, useRef . The major learning was using "useCallback" for memoization , "useRef" to connect button and input in order to create copying functionality and it was also a great learning to use "setTimeOut" inside "useEffect" to make the copied message disappear after a few seconds of the button being pressed.`,
+    
   },
 ]
 

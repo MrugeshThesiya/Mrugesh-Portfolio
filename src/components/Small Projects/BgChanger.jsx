@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import { smallProjects } from '../../constants'
 
 function BgChanger() {
   const [bgClr,setbgClr] = useState("")
@@ -62,13 +63,14 @@ function BgChanger() {
   ]
   return (
     <>
-    <div className={`min-h-screen flex flex-col items-center justify-center ${bgClr}`}>
-      <h1 className='text-center font-semibold my-[2rem] text-[2rem]'>Background Changer</h1>
-      <div className='bg-slate-900 flex flex-wrap items-center justify-center gap-[2rem] rounded-xl px-[1rem] mx-[2rem] mb-[2rem]'>
+    <div className={`min-h-screen py-[5rem] flex flex-col items-center justify-center ${bgClr} px-[2rem]`}>
+      <h1 className='text-center font-semibold text-[2rem]'>Background Changer</h1>
+      <p className='text-center mb-4'>{smallProjects[0].desc}</p>
+      <div className='bg-slate-900 flex flex-wrap items-center justify-center gap-4 rounded-xl p-[1rem] mx-[1rem] mb-[2rem]'>
         {Colors.map((clr)=>(
-          <div className="flex flex-col flex-1 gap-1 my-[1rem] items-center justify-center flex-wrap flex-grow-0">
-          <span onClick={()=>{setbgClr(clr.class)}} className={`${clr.class} w-[2rem] md:w-[2rem] aspect-square rounded-[50%] cursor-pointer`}></span>
-          <p className='text-[0.75rem]'>{clr.name}</p>
+          <div className="flex flex-col flex-1 gap-1 items-center justify-center flex-wrap flex-grow-0">
+          <span onClick={()=>{setbgClr(clr.class)}} className={`${clr.class} w-[4rem] sm:w-[3rem] aspect-square rounded-[50%] cursor-pointer mx-1`}></span>
+          <p>{clr.name}</p>
           </div>
         ))}
       </div>
