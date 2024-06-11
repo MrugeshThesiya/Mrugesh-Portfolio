@@ -4,7 +4,7 @@ import App from "./App.jsx";
 import { SmallProj,Home} from "./components";
 import {SmallProjWrapper} from "./hoc"
 import "./index.css";
-import { BgChanger,PasswordGenerator} from './components/Small Projects'
+import { BgChanger,PasswordGenerator,CurrencyConvertor} from './components/Small Projects'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -27,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "/PassWordGen",
         element:<SmallProjWrapper Proj={PasswordGenerator}/>,
+      },
+      {
+        path: "/CurrencyConverter",
+        element:<SmallProjWrapper Proj={CurrencyConvertor}/>,
       },
     ],
   },

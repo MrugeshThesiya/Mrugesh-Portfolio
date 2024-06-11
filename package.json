@@ -13,6 +13,7 @@
     "@emailjs/browser": "^4.2.0",
     "@react-three/drei": "^9.99.5",
     "@react-three/fiber": "^8.15.16",
+    "clipboard": "^2.0.11",
     "framer-motion": "^11.0.8",
     "lucide-react": "^0.383.0",
     "maath": "^0.10.7",
