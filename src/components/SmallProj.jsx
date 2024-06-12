@@ -20,7 +20,7 @@ function SmallProj() {
       </div>
       </div>
       <div className="flex items-center justify-center min-h-full pb-[2rem] gap-[2rem] flex-wrap mx-[2rem]">
-        {smallProjects.map((proj,index) => (
+        {smallProjects.map((proj) => (
           <Card key={proj.name}  proj={proj} />
         ))}
       </div>

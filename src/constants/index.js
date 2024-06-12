@@ -178,14 +178,14 @@ const smallProjects = [
   {
     name : "Password Generator",
     link : "/PassWordGen",
-    img : password,
+    img : "https://media1.tenor.com/m/-In2pFP1yxYAAAAC/password.gif",
     desc : `Through this project, I learned how to use various hooks such as "useCallback", "useEffect", "useState", and "useId". A major learning point was using useCallback for memoization. Additionally, I utilized Clipboard.js to implement copy functionality, which was not possible with the Clipboard API alone as it was not functional in mobile devices .`,
     
   }, 
   {
     name : "Currency Converter",
     link : "/CurrencyConverter",
-    img : password,
+    img : "https://media1.tenor.com/m/6Hixx4SFAeQAAAAd/backing-you-get-yours.gif",
     desc : `Through this project, I learned how to use various hooks such as "useCallback", "useEffect", "useState", and "useId". A major learning point was using useCallback for memoization. Additionally, I utilized Clipboard.js to implement copy functionality, which was not possible with the Clipboard API alone as it was not functional in mobile devices . It was also insightful to use setTimeout inside useEffect to make the copied message disappear a few seconds after the button is pressed.`,
     
   }, 
@@ -228,8 +228,13 @@ const credits = [
   },
   {
     item : "PasswordGenerator Gif",
-    owner : "Giphy",
-    link : "https://giphy.com/gifs/password-SXOdjPojfeOXzgc0J1"
+    owner : "Tenor",
+    link : "https://tenor.com/view/password-gif-10632339"
+  },
+  {
+    item : "Money Gif",
+    owner : "Tenor",
+    link : "https://tenor.com/view/backing-you-get-yours-danny-devito-danny-devito-gif-13052176"
   },
 ]
 

@@ -30,7 +30,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/CurrencyConverter",
-        element:<SmallProjWrapper Proj={CurrencyConvertor}/>,
+        element:<CurrencyConvertor/>,
       },
     ],
   },
