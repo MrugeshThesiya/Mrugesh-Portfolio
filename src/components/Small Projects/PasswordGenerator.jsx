@@ -60,11 +60,6 @@ function PasswordGenerator() {
     setPassword(passGen());
   }, [numAllow, charAllow, length,passGen]);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setIsToast(false);
-    }, 5000);
-  }, [isToast]);
   return (
     <div className="flex items-center justify-center flex-col">
       <h1 className="text-center font-semibold mb-[1rem] text-[2rem]">

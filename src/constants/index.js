@@ -179,7 +179,7 @@ const smallProjects = [
     name : "Password Generator",
     link : "/PassWordGen",
     img : password,
-    desc : `Through this project, I learned how to use various hooks such as "useCallback", "useEffect", "useState", and "useId". A major learning point was using useCallback for memoization. Additionally, I utilized Clipboard.js to implement copy functionality, which was not possible with the Clipboard API alone as it was not functional in mobile devices . It was also insightful to use setTimeout inside useEffect to make the copied message disappear a few seconds after the button is pressed.`,
+    desc : `Through this project, I learned how to use various hooks such as "useCallback", "useEffect", "useState", and "useId". A major learning point was using useCallback for memoization. Additionally, I utilized Clipboard.js to implement copy functionality, which was not possible with the Clipboard API alone as it was not functional in mobile devices .`,
     
   }, 
   {
