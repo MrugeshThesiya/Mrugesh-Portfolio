@@ -27,7 +27,7 @@ import CK from "./company/CK.jpg"
 import BhartiyaDharohar from "./projects/BhartiyaDharohar.jpg"
 import password from "./projects/password.webp"
 import react from "./projects/react.gif"
-import Mrugesh from "./Mrugesh.jpg"
+import Mrugesh from "./Mrugesh.png"
 
 
 export {

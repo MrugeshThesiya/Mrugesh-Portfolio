@@ -189,6 +189,13 @@ const smallProjects = [
     desc : `Through this project, I learned how to use various hooks such as "useCallback", "useEffect", "useState", and "useId". A major learning point was using useCallback for memoization. Additionally, I utilized Clipboard.js to implement copy functionality, which was not possible with the Clipboard API alone as it was not functional in mobile devices . It was also insightful to use setTimeout inside useEffect to make the copied message disappear a few seconds after the button is pressed.`,
     
   }, 
+  {
+    name : "Todo with Context Api",
+    link : "/TodoContext",
+    img : "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHQyMzhxdHVhMml0d2pjOXY2d3k5bGNzbmN0anQwcHN1ZWJ3d3FneiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kLOkqcrdC5mrCE7k7G/giphy.webp",
+    desc : `Through this project, I learned how to use various hooks such as "useCallback", "useEffect", "useState", and "useId". A major learning point was using useCallback for memoization. Additionally, I utilized Clipboard.js to implement copy functionality, which was not possible with the Clipboard API alone as it was not functional in mobile devices . It was also insightful to use setTimeout inside useEffect to make the copied message disappear a few seconds after the button is pressed.`,
+    
+  }, 
 ]
 
 const projects = [
@@ -235,6 +242,11 @@ const credits = [
     item : "Money Gif",
     owner : "Tenor",
     link : "https://tenor.com/view/backing-you-get-yours-danny-devito-danny-devito-gif-13052176"
+  },
+  {
+    item : "Todo Context Gif",
+    owner : "Giphy",
+    link : "https://giphy.com/gifs/drawify-kLOkqcrdC5mrCE7k7G"
   },
 ]
 
