@@ -18,14 +18,15 @@ const todoSlice = createSlice({
       state.todos = state.todos.filter((todo) => todo.id !== action.payload)
     },
     editTodo: (state, action) => {
+      console.log(action.payload);
       state.todos = state.todos.map((todo) => (todo.id === action.payload.id ? {...todo,text : action.payload.text} : todo ))
     },
-    addTodoList: (state, action) => {
+    toggleCompleted: (state, action) => {
+      state.todos = state.todos.map((todo) => (todo.id === action.payload.id ? {...todo,completed : !action.payload.completed} : todo ))
       console.log(action.payload)
-      state.todos = action.payload
-    },
+    }
   },
 })
 
-export const { addTodo, removeTodo , addTodoList , editTodo} = todoSlice.actions
+export const { addTodo, removeTodo , toggleCompleted , editTodo} = todoSlice.actions
 export default todoSlice.reducer
