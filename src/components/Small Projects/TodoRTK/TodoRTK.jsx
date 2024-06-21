@@ -99,7 +99,7 @@ function TodoRTK() {
           type="submit"
           className="text-white bg-indigo-500 border-0 px-2 md:py-2 md:px-6 focus:outline-none hover:bg-indigo-600 rounded md:text-m h-9"
         >
-          Add <span className='hidden md:block'>Todo</span>
+          Add
         </button>
       </form>
       <Todos />
