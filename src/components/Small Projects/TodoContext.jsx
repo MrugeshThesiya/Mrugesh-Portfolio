@@ -35,9 +35,8 @@ function TodoItem({ todo }) {
   const [completed, setCompleted] = useState(todo.completed);
   return (
     <div
-      className={`w-full flex border border-black/10 rounded-lg px-3 py-1.5 gap-x-3 shadow-sm shadow-white/50 duration-300  text-black ${
-        todo.completed ? "bg-[#c6e9a7]" : "bg-[#ccbed7]"
-      }`}
+      className={`w-full flex border border-black/10 rounded-lg px-3 py-1.5 gap-x-3 shadow-sm shadow-white/50 duration-300  text-black ${todo.completed ? "bg-[#c6e9a7]" : "bg-[#ccbed7]"
+        }`}
     >
       <input
         type="checkbox"
@@ -50,15 +49,18 @@ function TodoItem({ todo }) {
         }}
       />
       <input
-        type="text"
-        className={`border outline-none w-full bg-transparent rounded-lg ${
-          isTodoEditable ? "border-black/10 px-2" : "border-transparent"
-        } ${todo.completed ? "line-through" : ""}`}
+      type="text"
+        className={`border outline-none w-full bg-transparent rounded-lg ${isTodoEditable ? "border-black/10 px-2" : "border-transparent"
+          } ${todo.completed ? "line-through" : ""}`}
         value={todoMsg}
         onChange={(e) => setTodoMsg(e.target.value)}
+        onKeyDown={(e)=>{if(e.key === 'Enter' ){
+           setIsTodoEditable(false); 
+           editTodo(todo.id, todoMsg); }}}
+        onDoubleClick={()=> {isTodoEditable ? null : setIsTodoEditable(true)}}
         readOnly={!isTodoEditable}
       />
-      {/* Edit, Save Button */}
+
       <button
         className="inline-flex w-8 h-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0 disabled:opacity-50"
         onClick={() => {
@@ -126,19 +128,17 @@ function TodoContext() {
     <TodoProvider
       value={{ todos, addTodo, deleteTodo, editTodo, toggleCompleted }}
     >
-      <div className="bg-[#172842] min-h-screen py-[10rem]">
-        <div className="w-full max-w-2xl mx-auto shadow-md rounded-lg px-4 py-3 text-white">
-          <h1 className="text-2xl font-bold text-center mb-8 mt-2">
-            Manage Your Todos
-          </h1>
-          <div className="mb-4">
-            <TodoForm />
-          </div>
-          <div className="flex flex-wrap gap-y-3">
-            {todos.map((todo) => (
-              <TodoItem key={todo.id} todo={todo} />
-            ))}
-          </div>
+      <div className="w-full max-w-2xl mx-auto shadow-md rounded-lg px-4 py-3 text-white">
+        <h1 className="text-2xl font-bold text-center mb-8 mt-2">
+          Manage Your Todos
+        </h1>
+        <div className="mb-4">
+          <TodoForm />
+        </div>
+        <div className="flex flex-wrap gap-y-3">
+          {todos.map((todo) => (
+            <TodoItem key={todo.id} todo={todo} />
+          ))}
         </div>
       </div>
     </TodoProvider>

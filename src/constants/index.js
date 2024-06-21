@@ -190,8 +190,8 @@ const smallProjects = [
     
   }, 
   {
-    name : "Todo with Context Api",
-    link : "/TodoContext",
+    name : "Todo App",
+    link : "/Todo",
     img : "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHQyMzhxdHVhMml0d2pjOXY2d3k5bGNzbmN0anQwcHN1ZWJ3d3FneiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kLOkqcrdC5mrCE7k7G/giphy.webp",
     desc : `Through this project, I learned how to use various hooks such as "useCallback", "useEffect", "useState", and "useId". A major learning point was using useCallback for memoization. Additionally, I utilized Clipboard.js to implement copy functionality, which was not possible with the Clipboard API alone as it was not functional in mobile devices . It was also insightful to use setTimeout inside useEffect to make the copied message disappear a few seconds after the button is pressed.`,
     
