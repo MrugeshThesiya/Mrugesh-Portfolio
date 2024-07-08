@@ -30,7 +30,7 @@ function TodoItem({ todo }) {
         onChange={(e) => {setTodoMsg(e.target.value)}}
         onKeyDown={(e)=>{if(e.key === 'Enter' ){
           setIsTodoEditable(false); 
-          dispatch(editTodo(todo)); }}}
+          dispatch(editTodo({todo,todoMsg})); }}}
         onDoubleClick={() => { isTodoEditable ? null : setIsTodoEditable(true) }}
         readOnly={!isTodoEditable}
       />
@@ -41,7 +41,7 @@ function TodoItem({ todo }) {
           if (todo.completed) return;
 
           if (isTodoEditable) {
-            dispatch(editTodo(todo));
+            dispatch(editTodo({todo,todoMsg}));
             setIsTodoEditable((prev) => !prev);
           } else setIsTodoEditable((prev) => !prev);
         }}

@@ -19,11 +19,10 @@ const todoSlice = createSlice({
     },
     editTodo: (state, action) => {
       console.log(action.payload);
-      state.todos = state.todos.map((todo) => (todo.id === action.payload.id ? {...todo,text : action.payload.text} : todo ))
+      state.todos = state.todos.map((todo) => (todo.id === action.payload.todo.id ? {...todo,text : action.payload.todoMsg} : todo ))
     },
     toggleCompleted: (state, action) => {
       state.todos = state.todos.map((todo) => (todo.id === action.payload.id ? {...todo,completed : !action.payload.completed} : todo ))
-      console.log(action.payload)
     }
   },
 })
